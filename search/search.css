@@ -1,0 +1,196 @@
+*{
+  margin: 0;
+}
+.navbar{
+  background-color: black;
+  width: 100%;
+  height:50px;
+  transition: 0.5s all ease-in-out;
+}
+
+.navbar-container{
+  display: flex;
+  align-items: center;
+  padding:0 50px;
+  height: 100%;
+  color: white;
+  font-family: 'Sen', sans-serif;
+  transition: 0.5s all ease-in-out;
+  
+}
+
+.logo-container{
+  flex:1;
+}
+
+
+
+.logo{
+  
+  font-size: 30px;
+  color: #4dbf00;
+}
+
+.logo:hover{
+  transform: scale(0.9);
+  transition: 0.2s all ease-in-out;
+}
+
+.menu-container{
+  flex:6;
+  
+}
+
+.menu-list{
+  display: flex;
+  list-style: none;
+}
+
+.menu-list-items{
+  margin-right: 50px;
+  cursor: pointer;
+}
+
+.menu-list-items:hover{
+  transform: scale(1.2);
+}
+
+.menu-list-items.active{
+  font-weight: bold;
+}
+
+.profile-container{
+  flex:2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.profile-picture:hover{
+  transform: scale(1.2);
+}
+
+.profile-text-container{
+  margin: 0 20px;
+}
+
+.fa-solid.fa-caret-down{
+  cursor: pointer;
+}
+
+.profile-picture{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.toggle{
+  width: 40px;
+  height: 20px;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  transition: 0.5s all ease-in-out;
+}
+
+.toggle-icon{
+  color: goldenrod;
+}
+
+.toggle-ball{
+  width: 18px;
+  height: 18px;
+  background-color: black;
+  position: absolute;
+  right: 1px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s all ease;
+}
+.sidebar{
+  
+  width: 50px;
+  height: 100%;
+  background: black;
+  position: fixed ;
+  top:0;
+  display: flex;
+  flex-direction: column;
+  padding-top: 70px;
+  align-items: center;
+  transition: 0.5s all ease-in-out;
+}
+
+.left-menu-icons{
+  color: white;
+  font-size: 20px;
+  margin-bottom: 40px;
+  transition: 0.5s all ease-in-out;
+  cursor: pointer;
+}
+
+.left-menu-icons:hover{
+  transform: scale(1.2);
+  transition: 0s all ease;
+}
+
+.container{
+  background-color: #151515;
+  height: min-calc(100vh - 50px);
+  color: white;
+  transition: 0.5s all ease-in-out;
+}
+
+/*toggle*/
+
+.arrow{
+  font-size: 120px;
+  position: absolute;
+  top:80px;
+  right:0;
+  color: lightgray;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+
+
+.container.active{
+  background-color: white;
+  transition: 0.5s all ease-in-out;
+}
+
+.music-list-title.active{
+  color: black;
+  transition: 0.5s all ease-in-out;
+}
+
+.navbar-container.active{
+  background-color: white;
+  color: black;
+  transition: 0.5s all ease-in-out;
+}
+
+.sidebar.active{
+  background-color: white;
+  transition: 0.5s all ease-in-out;
+}
+
+.left-menu-icons.active{
+  color: black;
+  transition: 0.5s all ease-in-out;
+}
+
+.toggle.active{
+  background-color: black;
+  transition: 0.5s all ease-in-out;
+}
+
+.toggle-ball.active{
+  background-color: white;
+  transform: translateX(-20px);
+}
